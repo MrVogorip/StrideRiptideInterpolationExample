@@ -1,0 +1,28 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrideRiptideInterpolationExample.Windows", "StrideRiptideInterpolationExample.Windows\StrideRiptideInterpolationExample.Windows.csproj", "{68571331-0016-4024-8BBE-955E33E53E96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrideRiptideInterpolationExample.Game", "StrideRiptideInterpolationExample.Game\StrideRiptideInterpolationExample.Game.csproj", "{04605646-EDAD-42B1-A6C3-60D7B2B94195}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68571331-0016-4024-8BBE-955E33E53E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68571331-0016-4024-8BBE-955E33E53E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68571331-0016-4024-8BBE-955E33E53E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68571331-0016-4024-8BBE-955E33E53E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04605646-EDAD-42B1-A6C3-60D7B2B94195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04605646-EDAD-42B1-A6C3-60D7B2B94195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04605646-EDAD-42B1-A6C3-60D7B2B94195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04605646-EDAD-42B1-A6C3-60D7B2B94195}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,141 @@
+!PrefabAsset
+Id: 5b8c3508-8d05-4b1a-b985-c2c5fe848093
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! f8f2b380-5660-4284-8dd8-4ed85a2f2e55
+    Parts:
+        -   Entity:
+                Id: 85cbb773-326f-4f0c-83b3-ad78d6b88b21
+                Name: MannequinModel
+                Components:
+                    1245d3c0d097e44e8295e28dad432562: !TransformComponent
+                        Id: a98add93-8e80-4e82-a9d9-4be0e2def6c6
+                        Position: {X: 0.0, Y: 4.7683716E-07, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    0fa4902c57c2de428808e383912863ea: !ModelComponent
+                        Id: c39858be-2b39-4d62-a5e9-385fcc32700e
+                        Model: 806049c5-e63d-4518-9e13-68b459b12cf0:Models/mannequinModel
+                        Materials: {}
+                    978eabfaac453f4d9375495d32bc299f: !StrideRiptideInterpolationExample.Character.CharacterAnimationController,StrideRiptideInterpolationExample.Game
+                        Id: ccb835e8-f842-4589-914f-211f571cb71d
+                        AnimationComponent: ref!! 069c8792-9d8b-4f2a-87dc-00e9a6f9b0ca
+                        Character: ref!! d04cee54-5dc9-427f-add4-14bee4bb6fcf
+                        AnimationIdle: 612af268-6717-41e5-820d-330f26631c8f:Animations/Idle
+                        AnimationWalk: 151d2abd-9143-4560-b373-2fb1cab1b713:Animations/Walk
+                        AnimationRun: 72bd80d5-2ee3-42d8-b58e-5c4df6e4ee97:Animations/Run
+                        AnimationJumpStart: c2866389-84a9-4973-98d2-748e64a33708:Animations/Jump_Start
+                        AnimationJumpMid: 248ceba7-063a-404c-a7af-0210a63884f1:Animations/Jump_Loop
+                        AnimationJumpEnd: e33c20ab-6fce-41eb-a1fc-64a40eb338f4:Animations/Jump_End
+                        WalkThreshold: 0.25
+                        TimeScale: 1.0
+                    5847b2c0adfcf347a100f94d96c5d325: !AnimationComponent
+                        Id: 069c8792-9d8b-4f2a-87dc-00e9a6f9b0ca
+                        Animations: {}
+        -   Entity:
+                Id: 86c289d8-a4cf-490e-b19c-c3e53e2bd21e
+                Name: CameraTarget
+                Components:
+                    39d4bdb202782a41869f2a6d53da4edf: !TransformComponent
+                        Id: 16064220-482b-40dc-ab5f-84e12b1efc18
+                        Position: {X: 0.0, Y: 1.65, Z: 0.0}
+                        Rotation: {X: -0.16715722, Y: -0.55716187, Z: -0.115674, W: 0.8051389}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            a116d811cab5bf4da5211050e1d34e10: ref!! 1cedfe32-ad7b-49ec-874d-6f3c407be221
+        -   Entity:
+                Id: c3c4d60e-7f4e-4ece-b713-427735ba9060
+                Name: Camera
+                Components:
+                    a116d811cab5bf4da5211050e1d34e10: !TransformComponent
+                        Id: 1cedfe32-ad7b-49ec-874d-6f3c407be221
+                        Position: {X: 0.0, Y: 0.0, Z: 5.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1fb7d1656248fc4eb7c13c9d933979c7: !CameraComponent
+                        Id: 47e7ad82-d8c3-454f-82fa-27f40d234557
+                        Name: null
+                        Projection: Perspective
+                        Slot: 9aeac611-d1f6-46da-a235-e20cc154e170
+                    cffbc9ddf95f8544a284e04ea2d27d8a: !StrideRiptideInterpolationExample.Character.CharacterCameraController,StrideRiptideInterpolationExample.Game
+                        Id: eba767cc-584a-4b7a-a2e4-0e873768278d
+                        CameraComponent: ref!! 47e7ad82-d8c3-454f-82fa-27f40d234557
+                        DefaultDistance: 6.0
+                        MinimumDistance: 0.4
+                        ConeRadius: 1.25
+                        MinVerticalAngle: -20.0
+                        MaxVerticalAngle: 70.0
+                        RotationSpeed: 360.0
+                        VerticalSpeed: 45.0
+        -   Entity:
+                Id: f8f2b380-5660-4284-8dd8-4ed85a2f2e55
+                Name: Character
+                Components:
+                    b296752080481e41b569d385767428ce: !TransformComponent
+                        Id: 85c0cd3a-bfb2-4044-af4c-8a332441971b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            1245d3c0d097e44e8295e28dad432562: ref!! a98add93-8e80-4e82-a9d9-4be0e2def6c6
+                            39d4bdb202782a41869f2a6d53da4edf: ref!! 16064220-482b-40dc-ab5f-84e12b1efc18
+                    b978a0332590234b9f3a3537f50e75ae: !CharacterComponent
+                        Id: e6295e6d-de18-4842-946c-ecbef4bcbbd8
+                        CollisionGroup: KinematicFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        FallSpeed: 10.0
+                        MaxSlope: {Radians: 0.7853982}
+                        JumpSpeed: 13.0
+                        Gravity: {X: 0.0, Y: -40.0, Z: 0.0}
+                        ColliderShapes:
+                            56a5239435c0e54188f913fd5d2f5dee: !CapsuleColliderShapeDesc
+                                Length: 1.2
+                                Radius: 0.33
+                                LocalOffset: {X: 0.0, Y: 0.9, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    f722a19496166946a5d26eaf23d2ae03: !StrideRiptideInterpolationExample.Character.CharacterController,StrideRiptideInterpolationExample.Game
+                        Id: d04cee54-5dc9-427f-add4-14bee4bb6fcf
+                        CharacterComponent: ref!! e6295e6d-de18-4842-946c-ecbef4bcbbd8
+                        RigidbodyComponent: ref!! 1964d51e-a704-41dc-bfe3-0b7064c58660
+                        CharacterInput: ref!! e3231e67-6070-4ac7-b65f-b13297fcc568
+                        CharacterCamera: ref!! eba767cc-584a-4b7a-a2e4-0e873768278d
+                        CharacterModel: ref!! 85cbb773-326f-4f0c-83b3-ad78d6b88b21
+                        MaxRunSpeed: 8.5
+                        JumpReactionThreshold: 0.15
+                    809bf66aef692646891c293be4ca17b2: !StrideRiptideInterpolationExample.Character.CharacterInputController,StrideRiptideInterpolationExample.Game
+                        Id: e3231e67-6070-4ac7-b65f-b13297fcc568
+                        Character: ref!! d04cee54-5dc9-427f-add4-14bee4bb6fcf
+                        DeadZone: 0.25
+                        MouseSensitivity: 1.0
+                    f58f5554db5549ef97e763bbcbaf890b: !RigidbodyComponent
+                        Id: 1964d51e-a704-41dc-bfe3-0b7064c58660
+                        CollisionGroup: KinematicFilter
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        IsKinematic: true
+                        Mass: 1.0
+                        LinearDamping: 0.0
+                        AngularDamping: 0.0
+                        OverrideGravity: false
+                        Gravity: {X: 0.0, Y: -40.0, Z: 0.0}
+                        NodeName: null
+                        ColliderShapes:
+                            34759ff7f4664b431991fbdda1ffa60c: !CapsuleColliderShapeDesc
+                                Length: 1.2
+                                Radius: 0.33
+                                LocalOffset: {X: 0.0, Y: 0.9, Z: 0.0}
+                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
